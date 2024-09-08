@@ -52,6 +52,10 @@ public class MeioDePgto {
         }
     }
 
+    public double descontoTotalPagamento(Pagamento pagamento){
+        return pagamento.getValorPgto() * this.taxaCartao;
+    }
+
     public void exibirPagamento() {
         nomePagamento();
         validarParcelas();

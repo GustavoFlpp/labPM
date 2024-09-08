@@ -17,7 +17,7 @@ public class Pagamento {
         return valorPgto;
     }
 
-    public void setValorPgto() {
+    public void setValorPgto(double valorPgto) {
         this.valorPgto = valorPgto;
     }
 }

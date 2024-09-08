@@ -44,7 +44,7 @@ public class Orcamento {
     public boolean adicionarItem(ItemDeOrcamento item) {
         boolean adicionado = this.itens.add(item);
         if (adicionado){
-            this.valorTotal += item.getValorTotal();
+            this.valorTotal += item.valorTotal();
         }
         return adicionado;
     }

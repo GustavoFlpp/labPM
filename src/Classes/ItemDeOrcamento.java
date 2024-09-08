@@ -11,20 +11,33 @@ public class ItemDeOrcamento {
         this.precoUnitario = precoUnitario;
     }
 
-    public double getValorTotal() {
-        return this.quantidade * this.precoUnitario;
-    }
-
     public int getQuantidade() {
         return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public String getProduto() {
         return produto;
     }
 
+    public void setProduto(String produto) {
+        this.produto = produto;
+    }
+
     public double getPrecoUnitario() {
         return precoUnitario;
     }
+
+    public void setPrecoUnitario(double precoUnitario) {
+        this.precoUnitario = precoUnitario;
+    }
+
+    public double valorTotal(){
+        return this.quantidade * this.precoUnitario;
+    }
 }
+
 
